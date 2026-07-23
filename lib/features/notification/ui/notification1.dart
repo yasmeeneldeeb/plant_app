@@ -1,3 +1,4 @@
+import 'package:fetchdata/features/notification/widgets/RowNotifacation.dart';
 import 'package:flutter/material.dart';
 
 class Notification1 extends StatelessWidget {
@@ -32,24 +33,7 @@ class Notification1 extends StatelessWidget {
 
             Padding(
               padding: const EdgeInsets.only(left: 16),
-              child: Row(
-                children: [
-                  Container(
-                    width: 77,
-                    height: 74,
-                    child: Image.asset('assets/images/flower.png'),
-                  ),
-                  SizedBox(width: 13,),
-                  Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                    Text('Order Successful',style: TextStyle(color: const Color.fromARGB(255, 59, 138, 62),fontWeight: FontWeight.w500),),
-                    Text('Spider Plant | Indoor'),
-                    Text('2 items'),
-                  ],)
-                ],
-                
-              ),
+              child: RowNotification(),
             ),
           ],
         ),
@@ -57,3 +41,4 @@ class Notification1 extends StatelessWidget {
     );
   }
 }
+

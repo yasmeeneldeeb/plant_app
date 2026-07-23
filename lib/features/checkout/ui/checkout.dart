@@ -1,4 +1,5 @@
 import 'package:custom_form_w/custom_form_w.dart';
+import 'package:fetchdata/features/checkout/ui/widgets/ElevateButton.dart';
 import 'package:flutter/material.dart';
 
 class Checkout extends StatelessWidget {
@@ -21,8 +22,7 @@ class Checkout extends StatelessWidget {
            padding: const EdgeInsets.all(8.0),
            child: Text('Personal Information',style: TextStyle(fontSize: 20,fontWeight: FontWeight.w500),),
          ),
-         SizedBox(
-          child: Divider(thickness: 1,color: Colors.black,)),
+         Divider(),
         
         TextFormField(
           decoration: InputDecoration(
@@ -63,8 +63,7 @@ class Checkout extends StatelessWidget {
            padding: const EdgeInsets.all(8.0),
            child: Text('Delivery Method',style: TextStyle(fontSize: 20,fontWeight: FontWeight.w500),),
          ),
-         SizedBox(
-          child: Divider(thickness: 1,color: Colors.grey,)),
+          Divider(),
                             SizedBox(height: 15),
           ListTile(title: Text('Quick Shipping - \$\15',style: TextStyle(color: Color(0xff007537)),),
           subtitle: Text('Expected Shipping Date:  May 5th'),
@@ -121,17 +120,8 @@ class Checkout extends StatelessWidget {
             Text('\$\515'),
           ],
         ),
-        Center(child: ElevatedButton(
-         
-          onPressed: (){},
-         child: Text('CONTINUE',style: TextStyle(color: Colors.white),),
-         style: ElevatedButton.styleFrom(
-          minimumSize: Size(300, 50),
-          backgroundColor: Color(0xff007537),
-          
+        Center(child: ElevateBUttom(),
          ),
-         ),
-         )
           ],),
       ),
     );

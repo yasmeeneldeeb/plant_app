@@ -12,20 +12,7 @@ class Search extends StatelessWidget {
         centerTitle: true,
       ),
       body: Column(children: [
-TextField(
-  decoration: InputDecoration(
-    hintText: 'Search',
-    suffixIcon: Icon(Icons.search),
-    border: UnderlineInputBorder(),
-    enabledBorder: UnderlineInputBorder(
-      borderSide: BorderSide(
-        color: Colors.black,
-        width: 1,
-      ),
-    ),
-   
-    ),
-  ),
+TextField(),
 
  
 

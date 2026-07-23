@@ -1,9 +1,9 @@
 import 'package:fetchdata/core/Routes/app_routes.dart';
-import 'package:fetchdata/features/auth/login.dart';
-import 'package:fetchdata/features/auth/login2.dart';
-import 'package:fetchdata/features/checkout/checkout.dart';
-import 'package:fetchdata/features/home/botton_nav_bar.dart';
-import 'package:fetchdata/features/home/home.dart';
+import 'package:fetchdata/features/auth/ui/login.dart';
+import 'package:fetchdata/features/auth/ui/login2.dart';
+import 'package:fetchdata/features/checkout/ui/checkout.dart';
+import 'package:fetchdata/features/home/ui/botton_nav_bar.dart';
+import 'package:fetchdata/features/home/ui/home.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 

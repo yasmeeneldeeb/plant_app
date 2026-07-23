@@ -1,7 +1,7 @@
-import 'package:fetchdata/features/home/home.dart';
-import 'package:fetchdata/features/notification/notifacation.dart';
+import 'package:fetchdata/features/home/ui/home.dart';
+import 'package:fetchdata/features/notification/ui/notifacation.dart';
 import 'package:fetchdata/features/profile/profile.dart';
-import 'package:fetchdata/features/search/search.dart';
+import 'package:fetchdata/features/search/ui/search.dart';
 import 'package:flutter/material.dart';
 
 class BottonNavBar extends StatefulWidget {

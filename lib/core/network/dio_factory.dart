@@ -1,4 +1,5 @@
 import 'package:dio/dio.dart';
+import 'package:pretty_dio_logger/pretty_dio_logger.dart';
 
 class DioFactory {
   DioFactory._();
@@ -9,13 +10,22 @@ class DioFactory {
     Duration recieve = Duration(seconds: 30);
     if (dio == null) {
       dio = Dio(BaseOptions(connectTimeout: timeout, receiveTimeout: timeout));
+      dioPrettylogger();
       return dio!;
     } else {
       return dio!;
     }
   }
 
-
-
-  
+  static void dioPrettylogger() {
+    dio?.interceptors.add(
+      PrettyDioLogger(
+        requestHeader: true,
+        responseBody: true,
+        requestBody: true,
+        responseHeader: true,
+        error: true,
+      ),
+    );
+  }
 }

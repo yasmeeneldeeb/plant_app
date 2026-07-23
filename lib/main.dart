@@ -1,18 +1,19 @@
 import 'package:fetchdata/core/Routes/app_router.dart';
+import 'package:fetchdata/features/Deletitem/ui/widgets/deletItem.dart';
 import 'package:fetchdata/features/FAQS/fq.dart';
 import 'package:fetchdata/features/Plant%20Guieds/plant_guide.dart';
 import 'package:fetchdata/features/Deletitem/deletItem.dart';
 import 'package:fetchdata/features/history/history1.dart';
-import 'package:fetchdata/features/home/botton_nav_bar.dart';
+import 'package:fetchdata/features/home/ui/botton_nav_bar.dart';
 import 'package:fetchdata/features/cart/cart.dart';
-import 'package:fetchdata/features/details/details.dart';
+import 'package:fetchdata/features/details/ui/details.dart';
 import 'package:fetchdata/features/history/history.dart';
-import 'package:fetchdata/features/home/home.dart';
-import 'package:fetchdata/features/listing/listing.dart';
-import 'package:fetchdata/features/auth/login.dart';
-import 'package:fetchdata/features/auth/login2.dart';
-import 'package:fetchdata/features/notification/notifacation.dart';
-import 'package:fetchdata/features/notification/notification1.dart';
+import 'package:fetchdata/features/home/ui/home.dart';
+import 'package:fetchdata/features/listing/ui/listing.dart';
+import 'package:fetchdata/features/auth/ui/login.dart';
+import 'package:fetchdata/features/auth/ui/login2.dart';
+import 'package:fetchdata/features/notification/ui/notifacation.dart';
+import 'package:fetchdata/features/notification/ui/notification1.dart';
 import 'package:fetchdata/features/profile/profile.dart';
 import 'package:flutter/material.dart';
 
@@ -29,12 +30,12 @@ class PlantApp extends StatelessWidget {
       onGenerateRoute: appRouter.ongenerateRoute,
       debugShowCheckedModeBanner: false,
       // home: notifacation(),
-      // home: Cart(),
+      //home: Cart(),
       // home: Notification1(),
       // home: Listing(),
       // home: Details(),
       //home: History(),
-      //home:Profile(),
+      home:Profile(),
      // home: Login(),
       //home:Login2(),
       // home: Home(),
@@ -43,7 +44,8 @@ class PlantApp extends StatelessWidget {
       // home: History1(),
      // home: PlantGuide(),
       // home: CheckOut(),
-      home: CheckOut(),
+     // home: CheckOut(),
+    // home: DeletItem(),
     );
   }
 }

@@ -1,3 +1,5 @@
+import 'package:fetchdata/core/helper/images/images.dart';
+import 'package:fetchdata/features/details/ui/widgets/ElevateButton.dart';
 import 'package:flutter/material.dart';
 
 class Details extends StatelessWidget {
@@ -28,7 +30,7 @@ Container(
   width: 400,
   height: 268,
   color:Color(0xffF6F6F6),
-  child: Image.asset('assets/images/flower.png',fit: BoxFit.contain,),
+  child: Image.asset(Images.DetailsImage,fit: BoxFit.contain,),
 ),
 SizedBox(height: 30,),
 Padding(
@@ -90,15 +92,7 @@ Row(children: [
     width: 350,
     child: Divider(thickness: 2,)),
     SizedBox(height: 40,),
-    ElevatedButton(
-      
-      onPressed: (){}, child: Text('ADD TO CART',style: TextStyle(color: Colors.white),),
-      style: ElevatedButton.styleFrom(
-        minimumSize: Size(400, 40),
-backgroundColor: Color(0xff007537)
-        
-      ),
-      ),
+    Elevatebuttom(),
   ],),
    
      ), ],),
